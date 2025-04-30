@@ -344,17 +344,43 @@ body.bg-11 {
 }
 
 /* Tablet: 601px to 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
-  #calendar {
-    grid-auto-rows: 100px;
+@media (max-width: 600px) {
+  .day {
+    position: relative; /* ensure positioning context */
+    overflow: visible;  /* allow the label to overflow if needed */
   }
-  .date-number {
-    font-size: 1.4rem;
-    padding: 4px 8px;
+
+  .shift-label {
+    position: absolute;
+    bottom: 6px;     /* sit just above the bottom edge */
+    left: 6px;       /* inset from the left edge */
+    right: 6px;      /* inset from the right edge */
+    padding: 6px 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75); /* dark, semi-opaque backdrop */
+    color: #ffffff;                  /* bright white text */
+    border-radius: 4px;
+    z-index: 2;                      /* float above the date pill */
+    white-space: nowrap;             /* prevent wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;         /* “Morning…” if it’s too long */
+  }
+
+  /* If you also use birthday-label: */
+  .birthday-label {
+    position: absolute;
     top: 6px;
-    left: 6px;
+    right: 6px;
+    font-size: 0.9rem;
+    background: rgba(194,24,91,0.8);
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 4px;
+    z-index: 2;
+    white-space: nowrap;
   }
-  .shift-label { font-size: 0.8rem; }
 }
 
 /* Laptop & Desktop: 1025px and up */

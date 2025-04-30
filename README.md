@@ -80,5 +80,6 @@ These are defined in `init_db.sql` and in the server initialization logic :conte
 Feel free to open issues or submit pull requests.
 
 ## License
-MIT
+pavan
+
 

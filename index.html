@@ -7,27 +7,34 @@
   <title>My Shift Calendar</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1 id="title">My Shift Calendar</h1>
-  <div id="datetime"></div>
+  <header id="page-header">
+      <h1 id="title">My Calendar</h1>
+      <div id="clock"></div>
+    <img src="IMAGES/logo2.ico" alt="Logo" id="site-logo">
+  </header>
 
   <div id="calendar-header">
-    <button id="prev-month">&lt;</button>
+    <button id="prev-month"></button>
     <div id="month-year"></div>
-    <button id="next-month">&gt;</button>
+    <button id="next-month"></button>
   </div>
 
   <div id="calendar"></div>
 
-  <div id="shift-legend">
-    <div class="legend-item"><div class="legend-color morning"></div> Morning ☀️</div>
-    <div class="legend-item"><div class="legend-color afternoon"></div> Afternoon 🌤️</div>
-    <div class="legend-item"><div class="legend-color night"></div> Night 🌙</div>
-    <div class="legend-item"><div class="legend-color extra"></div> Extra ⭐</div>
-    <div class="legend-item"><div class="legend-color birthday"></div> Birthday 🎂</div>
-    <div class="legend-item"><div class="legend-color leave"></div> Leave 🚫</div>
-  </div>
-
-  <script src="script.js"></script>
+  <p>
+    <button id="view-raw" class="btn">
+      📄 View raw data
+    </button>
+  </p>
+  
+  <script>
+    document.getElementById('view-raw').addEventListener('click', () => {
+      window.open('raw.html', '_blank');
+    });
+  </script>
+  
+  <script src="script.js" defer></script>
 </body>
 </html>

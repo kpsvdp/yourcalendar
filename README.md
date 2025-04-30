@@ -1,5 +1,4 @@
 # Mycalendar
-# My Shift Calendar
 
 A web-based calendar app for tracking work shifts and birthdays—available as a standalone front-end (localStorage) or with a Node.js/Express and SQLite back-end.
 

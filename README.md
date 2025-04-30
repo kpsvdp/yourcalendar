@@ -47,7 +47,7 @@ npm install
 ````
 
 3. Initialize the SQLite database:
-   ```bash
+   ```https://kpsvdp.github.io/yourcalendar/
    ```
 
 npm run init-db

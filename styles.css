@@ -330,20 +330,17 @@ body.bg-11 {
   background: #218838;
 }
 
-/* Mobile: up to 600px wide */
+/* Mobile up to 600px: improve shift‐label readability */
 @media (max-width: 600px) {
-  #calendar {
-    grid-auto-rows: 80px;
-    gap: 3px;
+  .shift-label,
+  .birthday-label {
+    font-size: 1rem;               /* larger text */
+    font-weight: 600;              /* bolder */
+    padding: 6px 8px;              /* a bit more breathing room */
+    background: rgba(0, 0, 0, 0.6); /* darker, higher-contrast pill */
+    color: #fff;                   /* ensure white on dark bg */
+    border-radius: 6px;            /* smoother corners */
   }
-  .day { padding: 4px; }
-  .date-number {
-    font-size: 1.2rem;
-    padding: 3px 6px;
-    top: 4px;       /* move it back towards the top-left */
-    left: 4px;
-  }
-  .shift-label, .birthday-label { font-size: 0.7rem; }
 }
 
 /* Tablet: 601px to 1024px */

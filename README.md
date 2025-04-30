@@ -35,6 +35,7 @@ Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
 1. Clone this repository:
    ```bash
+   https://kpsvdp.github.io/yourcalendar/
    ```
 
 git clone [https://github.com/yourusername/calendar-app.git](https://github.com/yourusername/calendar-app.git)
@@ -46,8 +47,8 @@ cd calendar-app
 npm install
 ````
 
-3. Initialize the SQLite database:
-   ```https://kpsvdp.github.io/yourcalendar/
+3. Initialise the SQLite database:
+   ```bash
    ```
 
 npm run init-db
@@ -114,5 +115,6 @@ calendar-app/
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ## License
+
 MIT © Pavan Korapati
 
